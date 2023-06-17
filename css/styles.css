@@ -1,0 +1,791 @@
+.persian,.arabic{
+direction: rtl;
+    font-family: "B Titr";
+}
+.turkish,.persian,.arabic{
+    display: none;
+}
+.logoImg{
+width: 99px;
+    height: 99px;
+}
+header{
+position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+#multiLangChoose{
+    inset: 0;
+    background: #00000042;
+    z-index: 22;
+    display: none;
+}
+#multiLangChoose.active{
+    display: block;
+}
+#multiLangChoose #closeIcon{
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    right: -360px;
+    left: 0;
+    margin: auto;
+    top: -68px;
+    z-index: 24;
+    cursor: pointer;
+}
+#multiLangChoose #closeIcon img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: all .4s;
+}
+#multiLangChoose #closeIcon img:hover{
+    background: lightgray;
+}
+#multiLangBox{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -423px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height:70px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .4s;
+    z-index: 24;
+}
+#multiLangBox.active{
+    top: 222px;
+}
+#multiLangBox ul{
+    list-style-type: none;
+    padding: 0;
+}
+#multiLangBox ul li{
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+}
+#multiLangBox ul li.active{
+    color: orangered;
+}
+#multiLangBox ul li:hover{
+    cursor: pointer;
+    color: grey;
+}
+header > a p{
+    text-shadow: 0 0 6px grey;
+    margin-top: 9px;;
+}
+.languages{
+    width: 120px;
+    height: 37px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid orange;
+    color: orange;
+    transition: all .4s;
+    margin-left: 24px;
+}
+.languages:hover{
+   box-shadow: 0 0 20px 4px lightgray;
+}
+.bell{
+    width: 37px;
+    height: 37px;
+    border-radius: 49%;
+    cursor: pointer;
+}
+.chat{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 7px;
+}
+.redcircle{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    top: -4px;
+    right: -4px;
+    background: red;
+}
+.banner{
+   background-image: url("../images/orange.jpg");
+    height: 335px;
+     display: flex;
+     background-size: 100% 100%;
+     position: relative;
+     flex-direction: column;
+}
+.banner img{
+   width: 200px;
+    height: 200px;
+}
+.headline{
+    background-image: url(../images/orange2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 83px;
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.headline .loud{
+    width: 46px;
+    border-radius: 27px;
+    animation-name: microphone;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes microphone {
+    0% {
+
+    }
+    60% {
+        transform: scale(1.1);
+        box-shadow: 0 0 21px 4px #c69500;
+    }
+    100% {
+
+    }
+}
+.headline .arrow{
+    height: 59px;
+    width: 59px;
+}
+.headline a{
+    cursor: pointer;
+}
+.logout{
+    width: 67px;
+    height: 44px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.logout:hover{
+    transform: scale(1.1);
+}
+.iconCircle{
+    border-radius: 50%;
+    width: 96px;
+}
+.container-fluid{
+    background: #f6f6f6;
+}
+.wallet .bg-white{
+    border-radius: 29px;
+    width: 470px;
+}
+.walletNumber,.membership h2,.inviteCode strong,.userInfo h2{
+   color: orange;
+    font-size: 22px;
+}
+.join {
+    width: 92%;
+    background: white;
+    border-radius: 29px;
+    margin: auto;
+}
+.join a,.inviteBtn{
+    margin: 18px auto 18px auto;
+    display: inline-block;
+    width: 144px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 16px;
+    outline: 0;
+    background: linear-gradient(270deg,orange,orangered);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all .4s;
+}
+.join a:hover,.inviteBtn:hover,.userInfo a:hover,.vipbtn:hover,.ReceivedBtn:hover,.login form .submit:hover {
+    box-shadow: 0 0 22px 9px orange;
+}
+.membership > div{
+    border-radius: 29px;
+    width: 470px;
+}
+.about,.partner{
+    border-radius: 29px;
+    background: white;
+    width: 92%;
+    margin: auto;
+}
+.partner img{
+    width: 251px;
+}
+
+.vipbtn,.ReceivedBtn,.userInfo a{
+    display: inline-block;
+    width: 144px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 16px;
+    outline: 0;
+    background: linear-gradient(270deg,orange,orangered);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all .4s;
+}
+.view{
+    cursor: pointer;
+    color: grey!important;
+    transition: all .4s;
+}
+.view:hover{
+    color: orangered!important;
+}
+.receiveMining{
+    background: #f5fbff;
+    border-radius: 29px;
+}
+.receiveMining img{
+    margin-left: -50px;
+}
+.barcode{
+    border: 20px solid #dfe6ea;
+    border-radius: 29px;
+}
+.referLink{
+   background-image: url("../images/orange.jpg");
+    height: 263px;
+    margin-top: 66px;
+    background-size: 100% 100%;
+    position: relative;
+}
+.referLink img{
+    width: 99px;
+    right: 33px;
+    top: -33px;
+    animation-name: Star;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes Star {
+    0% {
+        transform: translate3d(-4px, 4px, 4px);
+    }
+    60% {
+        transform: translate3d(29px, 22px, 24px);
+    }
+    100% {
+        transform: translate3d(-4px, 4px, 4px);
+    }
+}
+
+.copyaddress{
+   right: 758px!important;
+}
+.referLink p{
+    font-size: 21px;
+    color: #fff;
+    opacity: .8;
+    padding: 12px 0 0 34px;
+    font-weight: 500;
+}
+.referLink h2{
+   padding:  44px 0 0 34px;
+}
+.referLink .inputBox{
+    background: #fff;
+    height: 65px;
+    border-radius: 10px;
+    margin: 24px 34px 0 34px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.referLink .inputBox input{
+    width: 92%;
+    text-indent: 12px;
+    outline: 0;
+    border: 0;
+    font-size: 24px;
+    color: #2a2a2a;
+}
+.persian .referLink .inputBox button,.arabic .referLink .inputBox button{
+    right: 963px
+}
+.referLink .inputBox button{
+    position: absolute;
+    right: 9px;
+    top: 14px;
+    height: 40px;
+    line-height: 31px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    background: linear-gradient(270deg,orange,orangered);
+    width: 64px;
+    padding: 0;
+    transition: all .2s ease 0s;
+    cursor: pointer;
+}
+.referLink .inputBox button:hover{
+    box-shadow: 0 0 22px 9px orange;
+}
+.withdrawalForm{
+   margin-bottom: 49px;
+}
+select,.withdrawalForm input{
+    font-size: 28px;
+    height: 59px;
+    border-radius: 28px;
+    outline: none;
+    border: 1px solid orangered;
+}
+.icons a, .back{
+ color: black;
+}
+.deposit a{
+ background: white;
+}
+.icons a:hover,.deposit a:hover,.back:hover{
+ color: orange!important;
+    text-decoration: none!important;
+}
+.id{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 2px 3px rgb(0 0 0 / 25%);
+}
+.mineBanner{
+    background-image: url("../images/orangeBg.PNG");
+    height: 499px;
+    background-size: 100% 100%;
+    position: relative;
+}
+.deposit{
+    border-radius: 49%;
+}
+.quantity{
+   margin-top: 5px;
+}
+.mineBanner img{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 162px;
+    margin-top: -67px;
+    background: white;
+    border-radius: 49px;
+    box-shadow: 0 0 13px grey;
+}
+.qNumber{
+   font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+.trx{
+   font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+.icons img{
+    height: 107px;
+    display: block;
+    margin: auto;
+}
+.mineImg{
+  width: 416px;
+}
+.login{
+ background-image: url("../images/download.jpg");
+    height: 499px;
+    background-size: 100% 100%;
+    position: relative;
+    padding-top: 314px;
+}
+.login .coin1{
+    top: 29px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+.login .coin2{
+    top: 79px;
+    right: 20px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.login .coin3{
+    top: 156px;
+    right: 99px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+.login .coin4{
+    top: 122px;
+    left: 222px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+}
+.login .coin5{
+    top: 47px;
+    left: 277px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.login .coin6{
+    top: 4px;
+    left: 555px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+.login .coin7{
+    top: 170px;
+    right: 555px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+.login .coin8{
+    top: 104px;
+    left: 100px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+}
+.login .coin9{
+    top: 188px;
+    right: 255px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+.login .coin10{
+    top: 28px;
+    right: 345px;
+    width: 109px;
+    animation-name: rainy;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+}
+@keyframes rainy {
+    0% {
+        transform: translateY(8px);
+    }
+    20% {
+        transform: translateY(18px);
+    }
+    25% {
+        transform: translateY(23px);
+    }
+    30% {
+        transform: translateY(28px);
+    }
+    35% {
+        transform: translateY(33px);
+    }
+    40% {
+        transform: translateY(38px);
+    }
+    45% {
+        transform: translateY(43px);
+    }
+    50% {
+        transform: translateY(48px);
+    }
+    55% {
+        transform: translateY(53px);
+    }
+    60% {
+        transform: translateY(58px);
+    }
+    65% {
+        transform: translateY(63px);
+    }
+    70% {
+        transform: translateY(68px);
+    }
+    75% {
+        transform: translateY(73px);
+    }
+    80% {
+        transform: translateY(78px);
+    }
+    85% {
+        transform: translateY(83px);
+    }
+    90% {
+        transform: translateY(88px);
+    }
+    95% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.login form{
+border-radius: 29px;
+}
+.login form input{
+border: none;
+    outline: none;
+}
+.login form .check{
+width: 29px;
+    height: 29px;
+}
+.login form .submit{
+    border: 0;
+    background: linear-gradient(270deg,orange,orangered);
+    color: #fff;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    height: 57px;
+    border-radius: 36px;
+    font-size: 27px;
+    font-weight: bold;
+    transition: all .4s;
+}
+.Forget{
+    color: orangered!important;
+    cursor: pointer;
+}
+
+footer,.footerParent{
+    position: sticky;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+}
+footer .tradingIcon{
+    width: 39px;
+    height: 39px;
+    margin: auto;
+}
+footer .logo{
+    margin-top: -78px;
+    background: white;
+    border-radius: 49px;
+    box-shadow: 0 0 13px grey;
+    height: 84px;
+    width: 84px;
+}
+footer a{
+   cursor: pointer;
+    color: black;
+    width: 209px;
+}
+
+footer > a img{
+    height: 57px;
+    margin: auto;
+}
+footer a:hover{
+   text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1200px){
+    .persian .referLink .inputBox button,.arabic .referLink .inputBox button {
+        right: 771px;
+    }
+    .copyaddress {
+        right: 637px!important;
+    }
+
+}
+@media screen and (max-width: 992px){
+    .persian .referLink .inputBox button,.arabic .referLink .inputBox button {
+        right: 531px;
+    }
+    .copyaddress {
+        right: 445px!important;
+    }
+    .partner img {
+        width: 173px;
+    }
+}
+@media screen and (max-width: 768px){
+    .login .coin6,.login .coin7,.login .coin8,.login .coin3 {
+        display: none;
+    }
+    .login .coin1 {
+        top: 176px;
+    }
+    .login .coin9 {
+        right: 143px;
+    }
+    .login .coin2 {
+        top: 191px;
+    }
+    .receiveMining img {
+        margin-left: 24px;
+    }
+    footer > a img {
+        width: 31px;
+        height: 31px;
+        margin: auto;
+}
+    .persian .referLink .inputBox button,.arabic .referLink .inputBox button {
+        right: 362px;
+    }
+    .partner img {
+        width: 90px;
+    }
+
+}
+@media screen and (max-width: 680px){
+    .copyaddress {
+        right: 320px!important;
+    }
+    .icons img {
+        height: 77px;
+    }
+    .mineBanner {
+        height: 284px;
+    }
+}
+@media screen and (max-width: 576px){
+    .referLink {
+        height: auto;
+        padding-bottom: 23px;
+    }
+    .persian .referLink .inputBox button,.arabic .referLink .inputBox button {
+        right:313px;
+    }
+    .referLink img {
+        width: 64px;
+    }
+    .copyaddress {
+        right: 314px!important;
+    }
+    #multiLangChoose #closeIcon {
+        right: 0;
+        top: -90px;
+    }
+    .logoImg {
+        width: 58px;
+        height: 58px;
+    }
+    .logout {
+        width: 59px;
+        height: 40px;
+    }
+    .banner {
+        height: 263px;
+    }
+    .mineImg {
+        width: 345px;
+    }
+    .login .coin10 {
+        right: 198px;
+    }
+    .login .coin5 {
+        left: 156px;
+    }
+    .icons img {
+        height: 65px;
+    }
+    .icons h4 {
+        font-size: 17px;
+    }
+    .partner img {
+        width: 68px;
+    }
+    .headline .arrow {
+        height: 40px;
+        width: 40px;
+    }
+    .headline .loud {
+        width: 34px;
+}
+    .headline {
+        font-size: 15px;
+        line-height: 8px;
+}
+    .languages {
+        width: 92px;
+        margin-left: 5px;
+    }
+    header > a p {
+        font-size: 17px!important;
+    }
+    .withdrawalForm h1 {
+        font-size: 54px;
+    }
+    footer > a img {
+        width: 26px;
+        height: 26px;
+    }
+    footer a {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 420px){
+    .copyaddress {
+        right: 225px!important;
+    }
+    .remember p {
+       font-size:15px ;
+    }
+    }
+@media screen and (max-width: 400px){
+    .persian .referLink .inputBox button,.arabic .referLink .inputBox button {
+        right:188px;
+    }
+    .id {
+        font-size: 15px;
+    }
+    .copyaddress {
+        right: 185px!important;
+    }
+    .deposit a {
+        font-size: 13px;
+    }
+    .logoImg {
+        width: 43px;
+        height: 43px;
+    }
+    header > a p {
+        font-size: 14px!important;
+    }
+    footer .logo {
+        height: 64px;
+        width: 64px;
+    }
+    }
